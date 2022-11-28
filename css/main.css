@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+@import './blocks.css';
+
+:root {
+    /* colors */
+    /* dark mode */
+    --Dark-Blue: hsl(209, 23%, 22%);
+    --Very-Dark-Blue: hsl(207, 26%, 17%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+img {
+    width: 100%;
+    display: block;
+}

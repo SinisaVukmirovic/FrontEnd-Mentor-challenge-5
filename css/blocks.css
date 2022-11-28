@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25rem 1rem;
+    background-color: var(--Dark-Blue);
+}
+    header h1 {
+        font-size: 1rem;
+    }
+    header .switch span {
+        font-size: .95rem;
+    }
+
+section .search,
+section .filter {
+    margin: 2rem 1rem;
+}   
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: .5rem 2rem;
+        background-color: var(--Dark-Blue);
+        border-radius: .25rem;
+    }
+        .search input,
+        .filter select {
+            outline: none;
+            border: none;
+            border-radius: .25rem;
+        }
+        .search input {
+            background-color: var(--Dark-Blue);
+            width: 100%;
+            padding: 1rem;
+        }
+        .search input::placeholder {
+            color: var(--White);
+        }
+
+    .filter select {
+        width: 60%;
+        padding: 1rem;
+        border-right: 1rem solid transparent;
+        background-color: var(--Dark-Blue);
+        color: var(--White);
+    }
+
+main {
+    /* width: calc(100% - 5rem); */
+    margin: 3rem 4rem;
+}
+
+main article {
+    display: flex;
+    flex-direction: column;
+}
+    article .info {
+        background-color: var(--Dark-Blue);
+        padding: 1rem 2rem 3rem;
+    }
+    article .info h2 {
+        font-weight: 800;
+        font-size: 1.35rem;
+        line-height: 3;
+    }
+    article .info h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 2;
+    }
+    article .info h3 span {
+        font-weight: 300;
+        font-size: 1rem;
+    }
