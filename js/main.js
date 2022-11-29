@@ -7,9 +7,27 @@ const fetchCountries = async (api) => {
             Accept: 'application/json'
         }
     });
-console.log(response)
+
     const data = await response.json();
-    console.log(data)
+
+    countryInfo(data);
+    console.log(data[29])
+}
+
+
+
+
+const countryInfo = (data) => {
+    data.forEach(country => {
+        const name = country.name.common;
+        const population = country.population;
+        const region = country.region;
+        // const capital = country.capital[0];
+        const flag = country.flags.svg;
+
+        // console.log(name, population, region, flag);
+        // console.log(country.population)
+    });
 }
 
 window.addEventListener('onload', fetchCountries(apiUrl));
