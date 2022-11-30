@@ -1,27 +1,4 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2.25rem 1rem;
-    background-color: var(--Dark-Blue);
-}
-    header h1 {
-        font-size: 1rem;
-    }
-    /* header .switch span {
-        font-size: .95rem;
-    } */
-    header .switch {
-        display: flex;
-        /* place-items: center; */
-        justify-content: center;
-        align-items: center;
-        gap: .5rem;
-        font-weight: 600;
-    }
-        /* .switch svg {
-            width: 1.25rem;
-        } */
+@import './header.css';
 
 .search-filter {
     margin: 0 1rem;
