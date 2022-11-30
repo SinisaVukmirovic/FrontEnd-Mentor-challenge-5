@@ -7,20 +7,37 @@
     <title>REST Countries API</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js" type="module"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution {
+			font-size: 11px;
+			text-align: center;
+            background-color: hsl(209, 23%, 22%);
+            padding: 1.5rem;
+		}
+
+		.attribution a {
+			color: hsl(228, 45%, 44%);
+		}
+	</style>
 </head>
 <body>
     <header>
         <h1>Where in the world?</h1>
         <div class="switch">
-            <span class="icon"></span>
+            <span class="icon">
+                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#eee"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            </span>
             <span>Dark Mode</span>
         </div>
     </header>
 
-    <!-- <section class="search-filter"> -->
-    <section>
+    <!-- <div class="search-filter"> -->
+    <div class="search-filter">
         <div class="search">
-            <span class="icon">O</span>
+            <span class="icon">
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#eee"><path d="M0 0h24v24H0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            </span>
             <input type="text" placeholder="Search for a country...">
         </div>
         <div class="filter">
@@ -34,7 +51,7 @@
                 <option value="oceania">Oceania</option>
             </select>
         </div>
-    </section>
+    </div>
 
     <main>
         <!-- <article>
@@ -49,5 +66,12 @@
             </div>
         </article> -->
     </main>
+
+    <footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="https://github.com/SinisaVukmirovic" target="_blank">Sinisa Vukmirovic</a>.
+		</div>
+      </footer>
 </body>
 </html>

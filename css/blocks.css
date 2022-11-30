@@ -8,14 +8,28 @@ header {
     header h1 {
         font-size: 1rem;
     }
-    header .switch span {
+    /* header .switch span {
         font-size: .95rem;
+    } */
+    header .switch {
+        display: flex;
+        /* place-items: center; */
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        font-weight: 600;
     }
+        /* .switch svg {
+            width: 1.25rem;
+        } */
 
-section .search,
-section .filter {
-    margin: 2rem 1rem;
-}   
+.search-filter {
+    margin: 0 1rem;
+}
+    .search,
+    .filter {
+        margin: 2rem 0;
+    }   
     .search {
         display: flex;
         align-items: center;
@@ -53,27 +67,28 @@ section .filter {
 main {
     margin: 3rem 4rem;
 }
-
-main article {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
-}
-    article .info {
-        background-color: var(--Dark-Blue);
-        padding: 1rem 2rem 3rem;
+    main article {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        border-radius: .25rem;
+        overflow: hidden;
     }
-    article .info h2 {
-        font-weight: 800;
-        font-size: 1.35rem;
-        line-height: 3;
-    }
-    article .info h3 {
-        font-weight: 600;
-        font-size: 1rem;
-        line-height: 2;
-    }
-    article .info h3 span {
-        font-weight: 300;
-        font-size: 1rem;
-    }
+        article .info {
+            background-color: var(--Dark-Blue);
+            padding: 1rem 2rem 3rem;
+        }
+        article .info h2 {
+            font-weight: 800;
+            font-size: 1.35rem;
+            line-height: 3;
+        }
+        article .info h3 {
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 2;
+        }
+        article .info h3 span {
+            font-weight: 300;
+            font-size: 1rem;
+        }

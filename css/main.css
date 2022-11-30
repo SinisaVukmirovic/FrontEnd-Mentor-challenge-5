@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 @import './blocks.css';
+@import './desktop-view.css';
 
 :root {
     /* colors */
@@ -18,6 +19,11 @@
 html {
     font-size: 14px;
 }
+    @media (min-width: 1440px) {
+        html {
+            font-size: 16px;
+        }
+    }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -28,4 +34,9 @@ body {
 img {
     width: 100%;
     display: block;
+}
+
+span.icon {
+    display: grid;
+    place-items: center;
 }

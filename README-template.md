@@ -77,9 +77,10 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
+- Learned how to make number into 3 digits dot separated numbers (1.000.000) with RegEx
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function numberWithDots(numb) {
+    return numb.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
 ```
 

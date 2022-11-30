@@ -15,4 +15,4 @@ const fetchCountries = async (api) => {
     countryInfo(data);
 }
 
-window.addEventListener('onload', fetchCountries(apiUrl));
+window.addEventListener('DOMContentLoaded', fetchCountries(apiUrl));
