@@ -41,10 +41,10 @@
             display: none;
         }
 
-main {
+main.home {
     margin: 3rem 4rem;
 }
-    main article {
+    main.home article {
         display: flex;
         flex-direction: column;
         margin-bottom: 3rem;
