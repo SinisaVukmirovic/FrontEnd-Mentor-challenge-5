@@ -1,9 +1,11 @@
 import numberWithDots from './numberWithDots.js';
 // import clickedCountry from './detail.js';
 
-const main = document.querySelector('main');
 
 export default function countryInfo(data) {
+    const main = document.querySelector('main');
+    main.innerHTML = '';
+
     data.forEach(country => {
         if (country.name.common == 'Kosovo') return;
 

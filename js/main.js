@@ -1,4 +1,5 @@
 import countryInfo from './countryInfo.js';
+import './selectedRegion.js';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
 
@@ -23,13 +24,6 @@ const fetchCountries = async (api) => {
     //     });
     // });
 }
-
-const selectedElem = document.querySelector('#regions');
-
-selectedElem.addEventListener('change', () => {
-    let selectedRegion = selectedElem.value;
-    console.log(selectedRegion);
-});
 
 
 
