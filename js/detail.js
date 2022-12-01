@@ -1,6 +1,15 @@
-import countryInfo from './countryInfo.js';
+// const countriesELems = document.querySelectorAll('main a');
+// console.log(countriesELems);
+// console.log('sdf')
 
-const apiUrl = 'https://restcountries.com/v3.1/all';
+// function onDetailsPage() {
+//     console.log('sdf')
+// }
+import countryDetail from './countryDetail.js';
+
+const country = 'germany';
+
+const apiUrl = `https://restcountries.com/v3.1/name/${country}`;
 
 const fetchCountries = async (api) => {
     const response = await fetch(api, {
@@ -12,7 +21,9 @@ const fetchCountries = async (api) => {
     
     const data = await response.json();
     
-    countryInfo(data);
+    // console.log(data)
+    countryDetail(data);
+    // countryInfo(data);
 
     // const linksForCountries = document.querySelectorAll('main a');
     
@@ -23,16 +34,5 @@ const fetchCountries = async (api) => {
     //     });
     // });
 }
-
-const selectedElem = document.querySelector('#regions');
-
-selectedElem.addEventListener('change', () => {
-    let selectedRegion = selectedElem.value;
-    console.log(selectedRegion);
-});
-
-
-
-// const linksForCountries = document.querySelectorAll('main a');
 
 window.addEventListener('DOMContentLoaded', fetchCountries(apiUrl));
