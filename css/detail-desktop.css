@@ -1,0 +1,47 @@
+@import './main.css';
+@import './header.css';
+@import './footer.css';
+
+@media (min-width: 1440px) {
+    .controls {
+        margin: 5rem !important;
+    }
+
+    main {
+        flex-direction: row;
+        margin: 5rem !important;
+    }
+
+    main article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+    }
+        main article .details {
+            padding: 1.5rem 0;
+        }
+            main article .details h2 {
+                font-weight: 800;
+                font-size: 1.75rem;
+                line-height: 2;
+            }
+            main article .details h3 {
+                font-weight: 600;
+                font-size: .9rem;
+                line-height: 2;
+            }
+            main article .details h3 span {
+                font-weight: 300;
+                font-size: .8rem;
+            }
+        .details .country-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 3rem;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+}

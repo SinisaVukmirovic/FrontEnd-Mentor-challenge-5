@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 @import './blocks.css';
 @import './desktop-view.css';
-@import './detail.css';
+/* @import './detail.css';
+@import './detail-desktop.css'; */
 
 :root {
     /* colors */
