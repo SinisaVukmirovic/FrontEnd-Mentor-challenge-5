@@ -1,4 +1,4 @@
-import countryInfo from './countryInfo.js';
+import displayCountries from './displayCountries.js';
 import './selectedRegion.js';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
@@ -13,7 +13,7 @@ const fetchCountries = async (api) => {
     
     const data = await response.json();
     
-    countryInfo(data);
+    displayCountries(data);
 
     // const linksForCountries = document.querySelectorAll('main a');
     

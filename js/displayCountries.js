@@ -2,7 +2,7 @@ import numberWithDots from './numberWithDots.js';
 // import clickedCountry from './detail.js';
 
 
-export default function countryInfo(data) {
+export default function displayCountries(data) {
     const main = document.querySelector('main');
     main.innerHTML = '';
 

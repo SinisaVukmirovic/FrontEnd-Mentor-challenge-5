@@ -1,4 +1,4 @@
-import countryInfo from './countryInfo.js';
+import displayCountries from './displayCountries.js';
 
 const selectElem = document.querySelector('#regions');
 
@@ -16,7 +16,7 @@ selectElem.addEventListener('change', () => {
         
         const data = await response.json();
         // console.log(data);
-        countryInfo(data);
+        displayCountries(data);
         
         // console.log(data)
         // countryDetail(data);
