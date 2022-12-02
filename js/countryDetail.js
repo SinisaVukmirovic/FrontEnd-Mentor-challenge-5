@@ -1,6 +1,7 @@
 import numberWithDots from './numberWithDots.js';
 
 const main = document.querySelector('main');
+main.innerHTML = '';
 
 export default function countryDetail(data) {
     console.log(data[0])
@@ -25,7 +26,7 @@ export default function countryDetail(data) {
                     topLevelDomain, 
                     currencies, 
                     languages);
-        
+
         main.innerHTML += `
         <article>
             <div class="flag">
