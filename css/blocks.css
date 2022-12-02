@@ -24,6 +24,7 @@
         }
         .search input {
             background-color: var(--Dark-Blue);
+            color: var(--White);
             width: 100%;
             padding: 1rem;
         }

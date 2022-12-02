@@ -1,5 +1,6 @@
 import displayCountries from './displayCountries.js';
 import './selectedRegion.js';
+import './searchCountry.js';
 
 const apiUrl = 'https://restcountries.com/v3.1/all';
 
