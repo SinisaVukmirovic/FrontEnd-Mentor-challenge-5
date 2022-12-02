@@ -1,5 +1,4 @@
 import numberWithDots from './numberWithDots.js';
-// import clickedCountry from './detail.js';
 
 
 export default function displayCountries(data) {

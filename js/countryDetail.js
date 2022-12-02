@@ -1,10 +1,10 @@
 import numberWithDots from './numberWithDots.js';
 
 const main = document.querySelector('main');
-main.innerHTML = '';
+main.innerHTML = ''; 
 
 export default function countryDetail(data) {
-    console.log(data[0])
+    // console.log(data[0])
 
         const flag = data[0].flags.svg;
         const name = data[0].name.common;
@@ -17,15 +17,15 @@ export default function countryDetail(data) {
         const currencies = data[0].currencies;
         const languages = data[0].languages;
 
-        console.log(name, 
-                    nativeName, 
-                    population, 
-                    region, 
-                    subregion, 
-                    capital, 
-                    topLevelDomain, 
-                    currencies, 
-                    languages);
+        // console.log(name, 
+        //             nativeName, 
+        //             population, 
+        //             region, 
+        //             subregion, 
+        //             capital, 
+        //             topLevelDomain, 
+        //             currencies, 
+        //             languages);
 
         main.innerHTML += `
         <article>
