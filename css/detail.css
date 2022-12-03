@@ -28,7 +28,7 @@ main {
         display: grid;
         place-items: start;
         /* gap: 1rem; */
-        cursor: unset;
+        outline: none !important;
     }
 
     main .country-details {
@@ -60,11 +60,14 @@ main {
                 margin-top: 1rem;
             } */
             .details .borders span {
-                font-size: .75rem;
+                font-size: .6rem;
+                color: #ccc;
                 display: inline-block;
                 padding: .25rem 1.5rem;
                 background-color: var(--Dark-Blue);
-                margin: 1rem .75rem 0 0;
+                /* margin: 1rem 0 0 .75rem; */
+                margin-left: .75rem;
+                border-radius: .25rem;
             }
 
 

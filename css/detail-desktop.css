@@ -16,9 +16,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 8rem;
+        cursor: unset;
     }
         main article:hover {
-            outline: none;
+            filter: Unset;
         }
 
         main article .details {

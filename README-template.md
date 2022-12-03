@@ -81,6 +81,12 @@ function numberWithDots(numb) {
 }
 ```
 
+- Learned how to open new page without using an <a href=''> anchor tag
+```js
+  window.open('../pages/detail.html', '_self');
+``` 
+#### _self option is for opening in the same window tab
+
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 **Note: Delete this note and the content within this section and replace with your own learnings.**
@@ -93,7 +99,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Open new page without using <a href=''> anchor tag](https://www.w3schools.com/jsref/met_win_open.asp) - Decided to open new page this way, to keep the MarkUp a little cleaned and not wrapping all cards in a link tag.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**

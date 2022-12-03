@@ -54,10 +54,6 @@ main {
         overflow: hidden;
         cursor: pointer;
     }
-        article:hover {
-            outline: 1px solid var(--White);
-            /* box-shadow: 0 0 0 1px var(--White); */
-        }
         article .info {
             background-color: var(--Dark-Blue);
             padding: 1rem 2rem 3rem;

@@ -21,7 +21,6 @@ const fetchCountries = async (api) => {
     
     const data = await response.json();
     
-    // console.log(data)
     countryDetail(data);
     // countryInfo(data);
 

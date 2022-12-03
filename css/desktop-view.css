@@ -42,6 +42,9 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem 5rem;
     }
+        main article:hover {
+            filter: drop-shadow(0 0 2px var(--White));
+        }
         article .info {
             padding: .75rem 1.5rem 2rem;
         }
