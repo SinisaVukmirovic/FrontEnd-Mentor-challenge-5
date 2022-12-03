@@ -1,6 +1,5 @@
 import numberWithDots from './numberWithDots.js';
 
-
 export default function displayCountries(data) {
     const main = document.querySelector('main');
     main.innerHTML = '';
@@ -15,22 +14,21 @@ export default function displayCountries(data) {
         const flag = country.flags.svg;
         
         main.innerHTML += `
-            <a href="./pages/detail.html">
-                <article>
-                    <div class="flag">
-                        <img src="${flag}" alt="County's flag">
-                    </div>
-                    <div class="info">
-                        <h2>${name}</h2>
-                        <h3>Population: <span>${numberWithDots(population)}</span></h3>
-                        <h3>Region: <span>${region}</span></h3>
-                        <h3>Capital: <span>${capital}</span></h3>
-                    </div>
-                </article>
-            </a>
+            <article>
+                <div class="flag">
+                    <img src="${flag}" alt="County's flag">
+                </div>
+                <div class="info">
+                    <h2>${name}</h2>
+                    <h3>Population: <span>${numberWithDots(population)}</span></h3>
+                    <h3>Region: <span>${region}</span></h3>
+                    <h3>Capital: <span>${capital}</span></h3>
+                </div>
+            </article>
         `;
     });
 
+    getArticles();
 
     // }
 
@@ -53,3 +51,18 @@ export default function displayCountries(data) {
     // console.log(linksForCountries)
 
 
+    function getArticles() {
+
+        const articles = document.querySelectorAll('article');
+        
+        articles.forEach(article => {
+            article.addEventListener('click', () => {
+                const clickedCountry = article.querySelector('.info h2').textContent;
+                // console.log('county: ', clickedCountry);
+                sessionStorage.setItem('ClickedCountry', clickedCountry);
+
+                window.open('../pages/detail.html', '_self');
+            });
+        })
+    }
+    

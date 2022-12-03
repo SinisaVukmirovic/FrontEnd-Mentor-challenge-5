@@ -17,6 +17,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 8rem;
     }
+        main article:hover {
+            outline: none;
+        }
 
         main article .details {
             padding: 1.5rem 0;

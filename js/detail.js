@@ -7,7 +7,7 @@
 // }
 import countryDetail from './countryDetail.js';
 
-const country = 'germany';
+const country = sessionStorage.getItem('ClickedCountry');
 
 const apiUrl = `https://restcountries.com/v3.1/name/${country}`;
 
