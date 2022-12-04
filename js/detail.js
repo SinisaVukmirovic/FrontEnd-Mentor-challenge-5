@@ -6,6 +6,7 @@
 //     console.log('sdf')
 // }
 import countryDetail from './countryDetail.js';
+import './themeSwitch.js';
 
 const country = sessionStorage.getItem('ClickedCountry');
 

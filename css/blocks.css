@@ -23,7 +23,7 @@
             border-radius: .25rem;
         }
         .search input {
-            background-color: var(--Dark-Blue);
+            background-color: var(--Dark-Gray);
             color: var(--White);
             width: 100%;
             padding: 1rem;
@@ -33,6 +33,7 @@
         }
 
     .filter select {
+        cursor: pointer;
         width: 60%;
         padding: 1rem;
         border-right: 1rem solid transparent;

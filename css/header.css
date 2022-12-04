@@ -8,10 +8,10 @@ header {
     header h1 {
         font-size: 1rem;
     }
-    /* header .switch span {
+    /* header .# span {
         font-size: .95rem;
     } */
-    header .switch {
+    header #switch {
         display: flex;
         /* place-items: center; */
         justify-content: center;
@@ -19,7 +19,7 @@ header {
         gap: .5rem;
         font-weight: 600;
     }
-        /* .switch svg {
+        /* .# svg {
             width: 1.25rem;
         } */
 

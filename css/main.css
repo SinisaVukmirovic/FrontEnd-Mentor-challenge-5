@@ -7,9 +7,17 @@
 :root {
     /* colors */
     /* dark mode */
-    --Dark-Blue: hsl(209, 23%, 22%);
-    --Very-Dark-Blue: hsl(207, 26%, 17%);
-    --White: hsl(0, 0%, 100%);
+    --Dark-Blue: hsl(209, 23%, 22%);    /* elems bg clr */
+    --Very-Dark-Blue: hsl(207, 26%, 17%);    /* body bg clr */
+    --White: hsl(0, 0%, 100%);    /* text clr */
+    --Dark-Gray: hsl(209, 23%, 22%);    /* input bg clr */
+}
+
+[data-theme="light"] {
+    --Dark-Blue: hsl(0, 0%, 100%);
+    --Very-Dark-Blue: hsl(0, 0%, 96%);
+    --White: hsl(200, 15%, 8%);
+    --Dark-Gray: hsl(0, 0%, 100%);
 }
 
 * {
@@ -51,7 +59,19 @@ img {
     display: block;
 }
 
+button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
 span.icon {
     display: grid;
     place-items: center;
+}
+
+svg path {
+    fill: var(--White);
 }
