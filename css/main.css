@@ -15,7 +15,7 @@
 
 [data-theme="light"] {
     --Dark-Blue: hsl(0, 0%, 100%);
-    --Very-Dark-Blue: hsl(0, 0%, 96%);
+    --Very-Dark-Blue: hsl(0, 0%, 90%);
     --White: hsl(200, 15%, 8%);
     --Dark-Gray: hsl(0, 0%, 100%);
 }
