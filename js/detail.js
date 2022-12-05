@@ -7,11 +7,22 @@
 // }
 import countryDetail from './countryDetail.js';
 import './themeSwitch.js';
-import darkTheme from './themeSwitch.js';
+// import { darkTheme } from './main.js';
 
-darkTheme = sessionStorage.getItem('dark-theme');
+// let darkTheme = sessionStorage.getItem('dark-theme');
 
+// if (darkTheme ? document.documentElement.setAttribute('data-theme', 'light') :
+// document.documentElement.removeAttribute('data-theme', 'light'));
 
+if (sessionStorage.getItem('dark-theme') == 'true') {
+    document.documentElement.removeAttribute('data-theme', 'light');
+    // themeSwitchIcon.innerHTML = lightThemeIcon;
+    // themeSwitchText.textContent = 'Light Mode';
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    // themeSwitchIcon.innerHTML = darkThemeIcon;
+    // themeSwitchText.textContent = 'Dark Mode';
+}
 
 
 

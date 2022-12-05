@@ -30,6 +30,7 @@ const fetchCountries = async (api) => {
 
 
 // const linksForCountries = document.querySelectorAll('main a');
+// export let darkTheme = true;
 
 window.addEventListener('DOMContentLoaded', fetchCountries(apiUrl));
 
