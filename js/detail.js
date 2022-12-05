@@ -15,11 +15,14 @@ import './themeSwitch.js';
 // document.documentElement.removeAttribute('data-theme', 'light'));
 
 if (sessionStorage.getItem('dark-theme') == 'true') {
-    document.documentElement.removeAttribute('data-theme', 'light');
+    // console.log(true)
+    document.documentElement.setAttribute('data-theme', 'light');
     // themeSwitchIcon.innerHTML = lightThemeIcon;
     // themeSwitchText.textContent = 'Light Mode';
 } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    // console.log(false)
+
+    document.documentElement.removeAttribute('data-theme', 'light');
     // themeSwitchIcon.innerHTML = darkThemeIcon;
     // themeSwitchText.textContent = 'Dark Mode';
 }
