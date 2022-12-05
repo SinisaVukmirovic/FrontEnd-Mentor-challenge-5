@@ -9,7 +9,7 @@ footer {
     width: 100%; */
     font-size: .8rem;
     text-align: center;
-    background-color: hsl(209, 23%, 22%);
+    background-color: var(--Dark-Blue);
     padding: 1.5rem;
 }
 

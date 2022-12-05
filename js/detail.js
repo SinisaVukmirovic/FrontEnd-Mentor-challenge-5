@@ -7,6 +7,20 @@
 // }
 import countryDetail from './countryDetail.js';
 import './themeSwitch.js';
+import darkTheme from './themeSwitch.js';
+
+darkTheme = sessionStorage.getItem('dark-theme');
+
+
+
+
+
+
+
+
+
+
+
 
 const country = sessionStorage.getItem('ClickedCountry');
 
