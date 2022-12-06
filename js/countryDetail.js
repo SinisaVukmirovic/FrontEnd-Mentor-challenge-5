@@ -1,7 +1,5 @@
 import numberWithDots from './numberWithDots.js';
 import countryBorders from './countryBorders.js';
-// import { darkTheme } from "./main.js";
-
 
 const main = document.querySelector('main');
 main.innerHTML = ''; 

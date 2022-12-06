@@ -1,4 +1,5 @@
 import numberWithDots from './numberWithDots.js';
+import getArticles from './getArticles.js';
 
 export default function displayCountries(data) {
     const main = document.querySelector('main');
@@ -28,41 +29,5 @@ export default function displayCountries(data) {
         `;
     });
 
-    getArticles();
-
-    // }
-
-    // const countryElements = document.querySelectorAll('main article');
-    // // console.log(...countryElements)
-    // countryElements.forEach(elem => {
-    //     elem.addEventListener('click', () => {
-    //         const name = elem.querySelector('.info h2');
-    //         console.log(name.textContent)
-    //         return name;
-    //     });
-    // });
-    
+    getArticles();    
 }
-
-    // clickedCountry();
-    //  clickedCountry() 
-    // const linksForCountries = document.querySelectorAll('main a');
-    
-    // console.log(linksForCountries)
-
-
-    function getArticles() {
-
-        const articles = document.querySelectorAll('article');
-        
-        articles.forEach(article => {
-            article.addEventListener('click', () => {
-                const clickedCountry = article.querySelector('.info h2').textContent;
-                // console.log('county: ', clickedCountry);
-                sessionStorage.setItem('ClickedCountry', clickedCountry);
-
-                window.open('../pages/detail.html', '_self');
-            });
-        })
-    }
-    
