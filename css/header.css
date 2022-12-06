@@ -17,7 +17,8 @@ header {
         justify-content: center;
         align-items: center;
         gap: .5rem;
-        font-weight: 600;
+        font-weight: 300;
+        font-size: .8rem;
     }
         /* .# svg {
             width: 1.25rem;

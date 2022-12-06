@@ -5,8 +5,10 @@
 // function onDetailsPage() {
 //     console.log('sdf')
 // }
+// import './themeSwitch.js';
+// import { switchElemsForLight } from './DOMElems.js';
 import countryDetail from './countryDetail.js';
-import './themeSwitch.js';
+
 // import { darkTheme } from './main.js';
 
 // let darkTheme = sessionStorage.getItem('dark-theme');
@@ -14,19 +16,55 @@ import './themeSwitch.js';
 // if (darkTheme ? document.documentElement.setAttribute('data-theme', 'light') :
 // document.documentElement.removeAttribute('data-theme', 'light'));
 
-if (sessionStorage.getItem('dark-theme') == 'true') {
+// if (sessionStorage.getItem('dark-theme') == 'true') {
     // console.log(true)
-    document.documentElement.setAttribute('data-theme', 'light');
+    // document.documentElement.setAttribute('data-theme', 'light');
     // themeSwitchIcon.innerHTML = lightThemeIcon;
     // themeSwitchText.textContent = 'Light Mode';
-} else {
+// } else {
     // console.log(false)
 
-    document.documentElement.removeAttribute('data-theme', 'light');
+    // document.documentElement.removeAttribute('data-theme', 'light');
     // themeSwitchIcon.innerHTML = darkThemeIcon;
     // themeSwitchText.textContent = 'Dark Mode';
+// }
+
+
+
+
+
+
+let lightMode = sessionStorage.getItem('lightMode');
+
+
+const enableLightMode = () => {
+    // switchElemsForLight();
+    document.documentElement.setAttribute('data-theme', 'light');
+ 
+    sessionStorage.setItem('lightMode', 'enabled');
 }
 
+const disableLightMode = () => {
+    // switchElementsForDark();
+    document.documentElement.removeAttribute('data-theme', 'light');
+
+    sessionStorage.setItem('lightMode', null);
+}
+
+if (lightMode === 'enabled') {
+    enableLightMode();
+}
+
+// themeSwitchBtn.addEventListener('click', () => {
+//     lightMode = sessionStorage.getItem('lightMode');
+
+//     if (lightMode !== 'enabled') {
+//         enableLightMode();
+//     }
+//     else {
+//         disableLightMode();
+//     }
+// });
 
 
 
