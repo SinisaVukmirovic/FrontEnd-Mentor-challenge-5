@@ -58,7 +58,7 @@ function numberWithDots(numb) {
 }
 ```
 
-- Learned how to open new page without using an <a href=''> anchor tag
+- Learned how to open new page without using an a href='' anchor tag
 ```js
   window.open('../pages/detail.html', '_self');
 ``` 
@@ -70,7 +70,7 @@ Best way for Dark/Light theme functionality implementation on multi page site
 
 ### Useful resources
 
-- [Open new page without using <a href=''> anchor tag](https://www.w3schools.com/jsref/met_win_open.asp) - Decided to open new page this way, to keep the MarkUp a little cleaned and not wrapping all cards in a link tag.
+- [Open new page without using a href='' anchor tag](https://www.w3schools.com/jsref/met_win_open.asp) - Decided to open new page this way, to keep the MarkUp a little cleaned and not wrapping all cards in a link tag.
 
 ## Author
 
