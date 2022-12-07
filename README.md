@@ -62,6 +62,14 @@ function numberWithDots(numb) {
 ```js
   window.open('../pages/detail.html', '_self');
 ``` 
+
+- Learned how to find out object's key name, when needed to call that key's value, without knowing key's name, when it is different for each case...(not sure I explained that good...)
+```js
+  let languages = data[0].languages;
+  const langKey = Object.keys(languages);
+  languages = languages[langKey]
+```
+
 ##### _self option is for opening in the same window tab
 
 ### Continued development
