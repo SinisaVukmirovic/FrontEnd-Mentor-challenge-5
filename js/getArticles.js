@@ -8,7 +8,9 @@ export default function getArticles() {
             // console.log('county: ', clickedCountry);
             sessionStorage.setItem('ClickedCountry', clickedCountry);
 
-            window.open('pages/detail.html', '_self');
+            window.open('/pages/detail.html', '_self');
+            // window.open('../pages/detail.html', '_self');
+            // didn't work on github when '../pages' ???
         });
     })
 }
